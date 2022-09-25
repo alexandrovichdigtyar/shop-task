@@ -1,0 +1,16 @@
+@import "../../../styles/variables/variables.scss";
+@import "../../../styles/mixins/mixins.scss";
+
+.edit-window__btn-container {
+    button {
+        @include primary-btn;
+
+        margin-top: 10px;
+    }
+}
+
+.save-btn {
+    @include primary-btn;
+
+    margin-top: 10px;
+}

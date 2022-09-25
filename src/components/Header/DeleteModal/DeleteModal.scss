@@ -1,0 +1,27 @@
+@import "../../../styles/variables/variables.scss";
+@import "../../../styles/mixins/mixins.scss";
+
+.delete-window {
+    &__description {
+        background-color: $colorWhite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400;
+        border: 2px solid #000;
+        box-shadow: 24; 
+        padding: 20px;
+    }
+
+    &__btn-container {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            @include primary-btn;
+
+            margin-top: 10px;
+        }
+    }
+}

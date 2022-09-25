@@ -1,0 +1,26 @@
+@mixin body-20 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin primary-btn {
+    @include body-20;
+
+    color: $colorWhite;
+    background-color: $colorBlue;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 1px solid $colorBlue;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        background-color: $colorWhite;
+        color: $colorBlack;
+        border-color: $colorBlack;
+    }
+}
